@@ -56,6 +56,23 @@ void Prime_Factorization3(int N)
         cout << N << endl;
         return;
     }
+    for (int i = 2; i * i <= N; ++i)
+        while (N % i == 0)
+        {
+            cout << i << endl;
+            N = N / i;
+        }
+    if (N > 1)
+        cout << N << endl;
+}
+
+void Prime_Factorization4(int N)
+{
+    if (isPrime(N))
+    {
+        cout << N << endl;
+        return;
+    }
     int k = sqrt(N);
     bool primes[k + 1];
     fill(primes, primes + k + 1, true);
