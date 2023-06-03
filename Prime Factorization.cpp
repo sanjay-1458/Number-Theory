@@ -45,6 +45,7 @@ void Prime_Factorization2(int N)
         else
             i++;
     }
+    if(k > 1) cout << k << endl;
     if (isPrime(N))
         cout << N << endl;
 }
@@ -98,6 +99,7 @@ void Prime_Factorization4(int N)
         else
             i++;
     }
+    if(N > 1) cout << N << endl;
 }
 
 int32_t main()
